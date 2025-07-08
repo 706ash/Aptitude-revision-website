@@ -4,8 +4,18 @@ import { Search, BookOpen, User } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 
-export const Header = () => {
+interface HeaderProps {
+  onSearchChange: (query: string) => void;
+}
+
+export const Header = ({ onSearchChange }: HeaderProps) => {
   const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const query = e.target.value;
+    setSearchQuery(query);
+    onSearchChange(query);
+  };
 
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200/50 shadow-sm">
@@ -25,7 +35,7 @@ export const Header = () => {
                 type="text"
                 placeholder="Search topics, formulas..."
                 value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
+                onChange={handleSearchChange}
                 className="pl-10 w-64 bg-white/60 border-gray-200/60 focus:bg-white transition-all duration-200"
               />
             </div>
