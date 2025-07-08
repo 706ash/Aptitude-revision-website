@@ -27,61 +27,6 @@ export const dataInterpretationTopic: Topic = {
           importance: 'high'
         }
       ]
-    },
-    {
-      id: 'line-graphs',
-      title: 'Line Graphs',
-      description: 'Understand trends and patterns in line charts',
-      estimatedTime: '35 mins',
-      formulas: [],
-      keyNotes: [
-        {
-          id: 'line-concept-1',
-          title: 'Trend Analysis',
-          content: 'Look for patterns: increasing, decreasing, or constant trends over time.',
-          type: 'concept',
-          importance: 'high'
-        }
-      ]
-    },
-    {
-      id: 'pie-charts',
-      title: 'Pie Charts',
-      description: 'Analyze proportional data and percentages',
-      estimatedTime: '30 mins',
-      formulas: [
-        {
-          id: 'pie-formula-1',
-          title: 'Percentage Calculation',
-          formula: 'Percentage = (Part/Whole) × 100',
-          explanation: 'To find what percentage a segment represents of the total pie'
-        }
-      ],
-      keyNotes: [
-        {
-          id: 'pie-concept-1',
-          title: 'Reading Pie Charts',
-          content: 'The entire pie represents 100%. Each slice represents a proportion of the whole.',
-          type: 'concept',
-          importance: 'high'
-        }
-      ]
-    },
-    {
-      id: 'tables',
-      title: 'Data Tables',
-      description: 'Extract information from tabular data',
-      estimatedTime: '45 mins',
-      formulas: [],
-      keyNotes: [
-        {
-          id: 'table-concept-1',
-          title: 'Table Navigation',
-          content: 'Always read row and column headers carefully. Look for totals and subtotals.',
-          type: 'concept',
-          importance: 'high'
-        }
-      ]
     }
   ]
 };
