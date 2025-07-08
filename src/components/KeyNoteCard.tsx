@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -79,7 +78,14 @@ export const KeyNoteCard: React.FC<KeyNoteCardProps> = ({ keyNote }) => {
               </div>
             </div>
             
-            <p className="text-gray-700 leading-relaxed">{keyNote.content}</p>
+            <div className="text-gray-700 leading-relaxed">
+              {keyNote.content.split('\n').map((line, idx) => (
+                <span key={idx}>
+                  {line}
+                  <br />
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </CardContent>
