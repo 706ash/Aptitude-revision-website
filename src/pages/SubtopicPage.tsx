@@ -36,6 +36,24 @@ export const SubtopicPage: React.FC<SubtopicPageProps> = ({ subtopic, topicTitle
         </div>
       </div>
 
+      {/* Concepts Section */}
+      {subtopic.concepts && subtopic.concepts.length > 0 && (
+        <section>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6 flex items-center space-x-2">
+            <BookOpen className="w-6 h-6 text-blue-600" />
+            <span>Concepts</span>
+          </h2>
+          <ul className="space-y-4">
+            {subtopic.concepts.map((concept) => (
+              <li key={concept.id}>
+                <div className="font-semibold">{concept.title}</div>
+                <div className="text-gray-700 dark:text-gray-300">{concept.description}</div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       {/* Formulas Section */}
       {subtopic.formulas.length > 0 && (
         <section>

@@ -10,8 +10,15 @@ export interface Subtopic {
   id: string;
   title: string;
   description: string;
+  concepts?: Concept[];
   formulas: Formula[];
   mcqs: MCQ[];
+}
+
+export interface Concept {
+  id: string;
+  title: string;
+  description: string;
 }
 
 export interface Formula {
@@ -29,6 +36,7 @@ export interface MCQ {
   correctAnswer: number;
   explanation: string;
   difficulty: 'easy' | 'medium' | 'hard';
+  source?: string;
 }
 
 export interface SearchResult {
