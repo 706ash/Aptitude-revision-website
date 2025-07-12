@@ -7,9 +7,10 @@ export const simplificationSubtopic: Subtopic = {
   formulas: [
     {
       id: 'formula-1',
-      title: 'Basic Arithmetic Operations',
-      formula: 'Addition (+), Subtraction (−), Multiplication (×), Division (÷), Brackets ( )',
-      description: 'The five basic operations used in simplification problems: addition, subtraction, multiplication, division, and the use of brackets.'
+      title: 'Basic Algebraic Identities',
+      formula: '(a + b)² = a² + b² + 2ab\n(a² + b²) = ½[(a + b)² + (a – b)²]\na² – b² = (a + b)(a – b)\na³ + b³ = (a + b)(a² – ab + b²)',
+      description: 'Essential algebraic identities for simplification: square of sum, sum of squares, difference of squares, and sum of cubes.',
+      example: 'Examples: (5 + 3)² = 5² + 3² + 2×5×3 = 64; 7² – 3² = (7 + 3)(7 – 3) = 40.'
     },
     {
       id: 'formula-2',
@@ -18,18 +19,10 @@ export const simplificationSubtopic: Subtopic = {
       description: 'The order in which operations should be performed: Brackets first, then Orders (powers and roots), followed by Division, Multiplication, Addition, and finally Subtraction.'
     },
     {
-      id: 'formula-1',
-      title: 'Basic Algebraic Identities',
-      formula: '(a + b)^2 = a^2 + b^2 + 2ab',
-      description: 'Square of sum formula.',
-      example: 'Example: (5 + 3)^2 = 5^2 + 3^2 + 2×5×3 = 64.'
-    },
-    {
-      id: 'formula-a2b2',
-      title: 'Sum of Squares Formula',
-      formula: '(a² + b²) = ½[(a + b)² + (a – b)²]',
-      description: 'Expresses the sum of the squares of two numbers in terms of the squares of their sum and difference.',
-      example: 'For a = 5, b = 3: (5² + 3²) = ½[(5+3)² + (5–3)²] = ½[64 + 4] = 34.'
+      id: 'formula-3',
+      title: 'Basic Arithmetic Operations',
+      formula: 'Addition (+), Subtraction (−), Multiplication (×), Division (÷), Brackets ( )',
+      description: 'The five basic operations used in simplification problems: addition, subtraction, multiplication, division, and the use of brackets.'
     }
   ],
   mcqs: [
