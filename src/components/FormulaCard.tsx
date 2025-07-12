@@ -20,9 +20,9 @@ export const FormulaCard: React.FC<FormulaCardProps> = ({ formula }) => {
             {formula.title}
           </h3>
           <div className="bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-600 mb-3">
-            <code className="text-lg font-mono text-blue-700 dark:text-blue-300 break-words">
+            <pre className="text-lg font-mono text-blue-700 dark:text-blue-300 break-words whitespace-pre-line m-0">
               {formula.formula}
-            </code>
+            </pre>
           </div>
           <p className="text-gray-700 dark:text-gray-300 mb-3">
             {formula.description}
