@@ -1,7 +1,8 @@
 import { Topic } from '../types';
+import { simplificationSubtopic } from './subtopics/simplification.ts';
 import { numberSystem } from './subtopics/number-system';
 import { hcfLcm } from './subtopics/hcf-lcm';
-import { percentages } from './subtopics/percentages';
+// import { percentages } from './subtopics/percentages';
 import { tables } from './subtopics/tables';
 import { graphs } from './subtopics/graphs';
 
@@ -14,7 +15,8 @@ export const topics: Topic[] = [
     subtopics: [
       numberSystem,
       hcfLcm,
-      percentages
+      simplificationSubtopic,
+      // percentages
     ]
   },
   {
