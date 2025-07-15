@@ -3,7 +3,7 @@ import { simplificationSubtopic } from './subtopics/simplification';
 import { fractionsAndDecimalsSubtopic } from './subtopics/fractions-and-decimals';
 import { numberSystem } from './subtopics/number-system';
 import { hcfLcm } from './subtopics/hcf-lcm';
-import { percentages } from './subtopics/percentages';
+import { percentagesSubtopic } from './subtopics/percentages';
 import { tables } from './subtopics/tables';
 import { graphs } from './subtopics/graphs';
 
@@ -18,7 +18,7 @@ export const topics: Topic[] = [
       hcfLcm,
       simplificationSubtopic,
       fractionsAndDecimalsSubtopic,
-      // percentages
+      percentagesSubtopic
     ]
   },
   {
