@@ -4,14 +4,6 @@ export const templateSubtopic: Subtopic = {
   id: 'template-id',
   title: 'Template Title',
   description: 'Description of the subtopic goes here.',
-  concepts: [
-    {
-      id: 'concept-1',
-      title: 'Concept Title',
-      description: 'Description of the concept.'
-    }
-    // Add more concepts as needed
-  ],
   formulas: [
     {
       id: 'formula-1',
